@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(to bottom, lightskyblue,lightskyblue, #2199e8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.card {
+    border: none;
+    background-color: #2199e8;
+    color: green
+}
+
+h1, h2, h3, .h5  {
+    color:#191970;
+}
+
+.button {
+    margin: 0;
+    background-color: #e6e6e6;
+    color: #191970;
+}

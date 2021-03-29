@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="top-bar align-center">
+        <h1>Your Personal Weather Channel</h1>
+    </header>
+    <main class="grid-container fluid grid-margin-y">
+        <div class="grid-x grid-margin-x grid-padding-y grid-margin-y">
+    
+            <div class="cell medium-3">
+                <div class="grid-x">
+                    <div class="cell input-group">
+              
+                        <input type="search" class="input-group-field" id="city-search" name="city-search" placeholder="City search">
+                        <div class="input-group-button">
+                            <input id="search" class="button" type="submit" value="Search">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-x">
+                   
+                    <div class="cell" id="past-searches"></div>
+                    <div class="cell" id="clear"></div>
+                </div>
+            </div>
+            <div class="cell medium-9">
+               
+                <div class="grid-x grid-padding-x" id="current-weather"></div>
+           
+                <div class="grid-x grid-padding-x align-bottom" id="forecastGrid">
+                    <div class="cell" id="forecast-title">
+                        <br>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x card-section align-center small-up-2 medium-up-3" id="forecast"></div>
+            </div>
+
+        </div>
+    </main>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  
+    <script src="script.js"></script>
+
+</body>
+
+</html>
